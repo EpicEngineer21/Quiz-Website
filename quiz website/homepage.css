@@ -1,0 +1,70 @@
+/* Existing Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('https://imgs.search.brave.com/k-cKLrEaS1GK47lL62_ne1jb9ErjKrznWA5NAAnlOxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzA3LzE3LzUy/LzM2MF9GXzEwNzE3/NTI0OV9CWU9LdFZZ/ODZKcWl1S1JZZ00y/bHlHeTRsTHJxd0pv/eS5qcGc');
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Navigation Buttons */
+.navigation-buttons button,
+.auth-buttons button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover,
+.auth-buttons button:hover {
+    background-color: #2575fc;
+}
+
+.navigation-buttons button:active,
+.auth-buttons button:active {
+    background-color: #1e50b0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    .navigation-buttons button,
+    .auth-buttons button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
